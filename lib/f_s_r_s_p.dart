@@ -56,6 +56,11 @@ void descontar() {
 // Fazer um exemplo seu
 // Fazer comentários de tudo que entendeu
 
+// Função responsável por pegar o peso vivo do boi que fica armazenado na
+// variavel pesoVivo e utilizando a variavel rendimentoCarcaca que normalmente
+// é a metade do pesoVivo nos conseguimos calcular o @ do boi utilizando a
+// variavel pesoBoi que é o rendimento da carcaça / 15
+// o valor 15 é o padrão utilizado no Brasil
 void calcularArrobaBoiGordo() {
   print('Digite o peso total do boi:');
   var pesoVivo = double.parse(stdin.readLineSync()!);
