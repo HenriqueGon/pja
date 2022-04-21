@@ -1,0 +1,28 @@
+20/04/2022
+
+Atividade I 
+
+1) Qual a diferença entre a 1º e 2º forma? Na sua opinião, o que melhorou e o que piorou
+R: Criando funções da segunda forma nos conseguimos dar uma manutenção muito mais fácil e prática para o sistema, além de dividir corretamente todas as funcionalidades. Já
+da primeira forma nós temos todo o código num mesmo lugar, e pode acontecer de uma função ter mais do que realmente uma unica função.
+
+2) O que é e para que serve parâmetros do tipo função? Em que caso utilizamos?
+R: Serve para chamarmos uma determinada função diretamente dentro de outra função. Desta forma conseguimos enviar diretamente qual função
+queremos que seja executada.
+
+Atividade II - Defina 3 funções do mesmo contexto e uma interface para estas 
+funções
+→ função para escolha das funções do Salário 
+→ Receber salario e um valor. Bonificar e retornar o valor do salário.
+→ Receber salario e um valor. Descontar e retornar o valor do salário.
+→ Receber salario e um valor. Neste caso o valor é o bônus que tem encargos de 10%. 
+Adicionar o bônus e retornar o valor do salário.
+
+Atividade III
+Pensar em um projeto único 
+
+
+
+
+
+
