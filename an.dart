@@ -1,25 +1,30 @@
-double alqueireParaMetros(double alqueires, Function acao) {
-  return acao(alqueires);
+// função responsável por calcular a quantidade de metros baseada na quantidade
+// de alqueires passada e o tamanho de cada alqueire, que varia em cada estado.
+double calcularValorTerrenoAlqueire(
+    double alqueires, int tamanhoAlqueire, double valor, Function acao) {
+  double tamanhoTerrenoMetros = alqueires * tamanhoAlqueire;
+  double quantidade = acao(tamanhoTerrenoMetros);
+
+  return valor / quantidade;
 }
 
-double alqueirePaulista(double alqueire) {
-  int metros = 24200;
-
-  return alqueire * metros;
+double quantidadePessoasTerreno(double tamanhoTerreno) {
+  return tamanhoTerreno * 9;
 }
 
-double alqueireBaiano(double alqueire) {
-  int metros = 96800;
-
-  return alqueire * metros;
+double quantidadeCamposFutebol(double tamanhoTerreno) {
+  return tamanhoTerreno / 10800;
 }
 
-double alqueireMineiro(double alqueire) {
-  int metros = 48400;
-
-  return alqueire * metros;
+double valorTerreno(double valor, double tamanhoTerreno) {
+  return valor / tamanhoTerreno;
 }
 
 void show() {
-  print(alqueireParaMetros(5.5, alqueirePaulista));
+  // Paulista - 24200
+  // Baiano - 96800
+  // Mineiro - 48400
+
+  print(
+      calcularValorTerrenoAlqueire(5.5, 24200, 50000, quantidadeCamposFutebol));
 }
